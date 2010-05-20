@@ -1,4 +1,4 @@
-<ul>
+<!--<ul>
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar() ) : else : ?>
 
 <li>
@@ -23,3 +23,4 @@
 
 <?php endif; ?>
 </ul>
+-->
