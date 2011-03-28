@@ -11,7 +11,8 @@
 				</div><!-- end .padding -->
 					<div class="border-gray"></div>
 				<div class="padding">
-				
+					<h6><?php edit_post_link(__(" (Edit) "), ''); ?></h6>
+
 					<?php the_content('Read more&#8230;'); ?>
 
 					<?php wp_link_pages('before=<p class="link-pages">Pages: &after=</p>'); ?>
