@@ -41,8 +41,5 @@
 			<div class="clearing"></div>
 		</ul>
 	</div><!-- end #menu -->
-	<div id="search">
-		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
-	</div><!-- end #search -->
 <div class="clearing"></div>
 </div><!-- end #header -->
