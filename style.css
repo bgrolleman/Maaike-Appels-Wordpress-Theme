@@ -154,7 +154,13 @@ form#respond p.btt-submit-wrap input.btt-submit { width:150px; font-size:14px; b
 #footer p { font-size:11px; color:#888; font-weight:normal; line-height:18px; }
 #footer p a { color:#888; }
 
+/* ----- Oypo ----- */
+#oypo {
+	margin-left: -150px;
+}
 /* ----- Safari ----- */
 @media all and (-webkit-min-device-pixel-ratio:0) {
 #left .postmetadata span.tags { background:url(images/ico-icons.png) no-repeat left -24px; }
 }
+
+

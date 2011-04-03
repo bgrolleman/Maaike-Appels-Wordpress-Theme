@@ -1,0 +1,59 @@
+body {
+	margin: 0px;
+	background: #fff;
+}
+a {color: #2183C7}
+a:hover { color: #666 }
+.knop, .groteknop, .button {
+	background: #2083C7;
+	border-bottom-color: #0F5586;
+	color: #fff
+}
+.knop:hover, .groteknop:hover { 
+	background: #fff; 
+	color: #2083C7; 
+	border: 1px solid #2083C7
+}
+.PixxerGT {color: #2083C7}
+#PixxerParentPath a {color: #999} 
+#PixxerFoldersKop h1 { 
+	background: #2083C7;
+	color: #fff
+} 
+#PixxerFolderInfoUplink {
+	background: #2083C7;
+	color: #fff
+}
+#PixxerUplink a {background: url(http://www.oypo.nl/pixxer/api/css/0801/cyan/folderup.gif)}
+#PixxerPhotoNext a {
+	width: 30px;
+	height: 30px;
+	display:block;
+	cursor:pointer;
+	background: url(http://www.oypo.nl/pixxer/api/css/0801/cyan/arrow_photonext.png) no-repeat;
+	_background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.oypo.nl/pixxer/api/css/0801/cyan/photonext.png',sizingMethod='fixed'); 
+}
+#PixxerPhotoPrev a {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	display:block;
+	background: url(http://www.oypo.nl/pixxer/api/css/0801/cyan/arrow_photoprev.png) no-repeat;
+	_background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.oypo.nl/pixxer/api/css/0801/cyan/photoprev.png',sizingMethod='fixed'); 
+}
+#PixxerFotomail a {color: #999}
+#PixxerFotomail a:hover {color: #2083C7; text-decoration:none}
+#PixxerTblNL .PixxerSelectionAdd a {background: url(http://www.oypo.nl/pixxer/api/css/0801/cyan/selectionadd_nl.gif)} 
+#PixxerTblEN .PixxerSelectionAdd a {background: url(http://www.oypo.nl/pixxer/api/css/0801/cyan/selectionadd_en.gif)} 
+#PixxerTblFR .PixxerSelectionAdd a {background: url(http://www.oypo.nl/pixxer/api/css/0801/cyan/selectionadd_fr.gif)} 
+#PixxerTblNL #PixxerOrderbutton a {background: url(http://www.oypo.nl/pixxer/api/css/0801/cyan/naarwinkelwagen_nl.gif)}
+#PixxerTblEN #PixxerOrderbutton a {background: url(http://www.oypo.nl/pixxer/api/css/0801/cyan/naarwinkelwagen_en.gif)}
+#PixxerTblFR #PixxerOrderbutton a {background: url(http://www.oypo.nl/pixxer/api/css/0801/cyan/naarwinkelwagen_fr.gif)} 
+.PixxerPagNr, .PixxerPagNr a {color:#777!important}
+.PixxerPagNr a:hover {text-decoration:none}
+.PixxerPagNra {border: 1px solid #2083C7}
+.PixxerPagNra a {color: #2083C7!important}
+/* additional styles order overview */
+#bestelindex .regelActief { border: 1px dotted #2083C7 } 
