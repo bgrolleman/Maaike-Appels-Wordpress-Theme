@@ -167,6 +167,7 @@ form#respond p.btt-submit-wrap input.btt-submit { width:150px; font-size:14px; b
 #left .postmetadata span.tags { background:url(images/ico-icons.png) no-repeat left -24px; }
 }
 
+/* Customer Quote */
 div.customerquote {
 	clear: left;
 	height: 225px;
@@ -185,3 +186,21 @@ div.customerquote a {
 	padding-left: 25px;
 }
 
+/* ------ Show / Hide ------- */
+.more {
+      display: none;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666; 
+}
+a.showLink, a.hideLink {
+      text-decoration: none;
+      color: #36f;
+      padding-left: 8px;
+      background: transparent url(down.gif) no-repeat left; 
+}
+a.hideLink {
+      background: transparent url(up.gif) no-repeat left;  
+}
+a.showLink:hover, a.hideLink:hover {
+      border-bottom: 1px dotted #36f; 
+}
