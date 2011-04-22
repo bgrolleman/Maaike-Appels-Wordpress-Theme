@@ -169,8 +169,7 @@ form#respond p.btt-submit-wrap input.btt-submit { width:150px; font-size:14px; b
 
 /* Customer Quote */
 div.customerquote {
-	clear: left;
-	height: 225px;
+	height: 275px;
 }
 div.customerquote img {
 	float: left;
@@ -203,4 +202,26 @@ a.hideLink {
 }
 a.showLink:hover, a.hideLink:hover {
       border-bottom: 1px dotted #36f; 
+}
+
+/* StepCarousel */
+.stepcarousel{
+position: relative; /*leave this value alone*/
+overflow: scroll; /*leave this value alone*/
+width: 100%;
+height: 300px; /*Height should enough to fit largest content's height*/
+border: 1px solid #999; 
+}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarousel .customerquote, .stepcarousel .panel {
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin: 15px; /*margin around each panel*/
+width: 550px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
 }
