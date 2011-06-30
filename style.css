@@ -225,3 +225,5 @@ overflow: hidden; /*clip content that go outside dimensions of holding panel DIV
 margin: 15px; /*margin around each panel*/
 width: 550px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
 }
+
+.post ul { padding-bottom: 10px; }
