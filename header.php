@@ -35,7 +35,7 @@
 	</div><!-- end #logo -->
 	<div id="menu">
 		<ul>
-		    <li><a href="/">blog</a></li> 
+		  <!--  <li><a href="/">blog</a></li>  -->
 			<?php wp_list_pages('title_li='); ?>
 			<div class="clearing"></div>
 		</ul>
