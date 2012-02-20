@@ -25,7 +25,7 @@ p, li { color:#444; font-size:12px; line-height:18px; }
 ul, ol { padding:0; margin:0; }
 ul li, ol li { list-style-position:inside; }
 .border-gray { width:100%; height:5px; background:url(images/bg_post_border.png) repeat-x bottom left; }
-.padding { padding:0 0 0 185px; margin:10px 0; }
+.padding { padding:0 0 0 50px; margin:10px 0; }
 .alignleft { text-align:left; }
 .alignright { text-align:right; }
 .aligncenter { text-align:center; }
@@ -45,7 +45,7 @@ ul li, ol li { list-style-position:inside; }
 #header #logo p { color:#999; font-size:20px; margin:5px 0 0 0; }
 #header #menu { float:left; width:600px; margin:18px 50px 0 0; }
 #header #menu ul li { display:block; float:left; list-style:none; position:relative; }
-#header #menu ul li a { color:#777; margin:0 30px 0 0; font-size:20px; font-weight:normal; text-transform:lowercase; letter-spacing:-1px; }
+#header #menu ul li a { color:#777; margin:0 30px 0 0; font-size:20px; font-weight:normal; letter-spacing:-1px; }
 #header #menu ul li a:hover, #header #menu ul li.current_page_item a { color:#222; text-decoration:none; }
 #header #menu ul li ul { /* L1 */ display:none; background:#FFF; border:1px solid red; position:absolute; z-index:1000; top:20px; left:1px; }
 #header #menu ul li:hover ul { display:block; width:130px; border-top:1px solid #CCC; border-left:1px solid #CCC; border-right:2px solid #CCC; border-bottom:2px solid #CCC; }
@@ -75,7 +75,7 @@ ul li, ol li { list-style-position:inside; }
 #left p a.more-link { font-size:12px; font-weight:bold; color:#666; background:url(images/ico-icons.png) no-repeat left -22px; margin:0 0 0 15px; padding:0 0 0 20px; }
 #left ul li, #left ol li { padding:0 10px 0 10px ; margin : 0px };
 #left blockquote { padding:20px; font-style:italic; line-height:18px; }
-#left img { max-width:600px; }
+/*-- #left img { max-width:600px; } --*/
 #left address, #left kbd { font-family:Times New Roman, serif; font-size:15px; line-height:24px; }
 #left big { font-size:17px; }
 #left cite { font-size:14px; font-style:italic; line-height:24px; }
@@ -97,7 +97,7 @@ ul li, ol li { list-style-position:inside; }
 #left .postmetadata span.comments { background:url(images/ico-icons.png) no-repeat left -11px; padding:0 0 0 20px; }
 #left .postmetadata span.tags { background:url(images/ico-icons.png) no-repeat left -22px; padding:0 0 0 20px; }
 #left .navigation { padding:0 0 0 185px; margin:0 0 30px 0; }
-#left .navigation a { display:block; background:#F1F1F1; padding:5px; font-size:11px; font-weight:normal; }
+#left .navigation a { display:block; background:#F1F1F1; padding:5px; font-size:large; font-weight:normal; }
 
 /* ----- Right content ----- */
 #right { float:right; width:0px; padding:50px 0 0 0; background:#FFF; color:#555; font-size:12px; }
@@ -209,7 +209,7 @@ a.showLink:hover, a.hideLink:hover {
 position: relative; /*leave this value alone*/
 overflow: scroll; /*leave this value alone*/
 width: 100%;
-height: 300px; /*Height should enough to fit largest content's height*/
+height: 200px; /*Height should enough to fit largest content's height*/
 border: 1px solid #999; 
 }
 
@@ -223,7 +223,7 @@ top: 0;
 float: left; /*leave this value alone*/
 overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
 margin: 15px; /*margin around each panel*/
-width: 550px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+width: 700px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
 }
 
 .post ul { padding-bottom: 10px; }

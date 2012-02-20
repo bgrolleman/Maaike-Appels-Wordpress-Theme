@@ -49,7 +49,7 @@ galleryid: 'quotegallery', //id of carousel DIV
 beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
 panelclass: 'customerquote', //class of panel DIVs each holding content
 panelbehavior: {speed:300, wraparound:true, persist:false},
-defaultbuttons: {enable: true, moveby: 1, leftnav: ['<?php bloginfo('template_directory');?>/images/larrow.png', -10, 100], rightnav: ['<?php bloginfo('template_directory');?>/images/rarrow.png', -10, 100]},
+defaultbuttons: {enable: true, moveby: 1, leftnav: ['<?php bloginfo('template_directory');?>/images/larrow.png', -35, 50], rightnav: ['<?php bloginfo('template_directory');?>/images/rarrow.png', 5 , 50]},
 statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
 contenttype: ['inline'], // content type <--No comma following the very last parameter, always!
 autostep: {enable:true, moveby:1, pause:4000},

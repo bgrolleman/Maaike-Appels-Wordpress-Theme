@@ -30,8 +30,8 @@
 			<?php endwhile; ?>
 			
 			<div class="navigation">
-				<div class="old-posts floatleft"><?php next_posts_link('See old posts') ?></div>
-				<div class="new-posts floatright"><?php previous_posts_link('See new posts') ?></div>
+			<div class="old-posts floatleft"><?php next_posts_link('<- Oudere artikelen') ?></div>
+				<div class="new-posts floatright"><?php previous_posts_link('Nieuwere artikelen ->') ?></div>
 				<div class="clearing"></div>
 			</div><!-- end .navigation -->
 			
