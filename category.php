@@ -1,23 +1,21 @@
 <?php get_header(); ?>
 
 <div id="page">
-	<div id="left">
+	<div id="left" class="blog">
 	<?php if (have_posts()) : ?>
 	
 	<div class="padding">
-		<h2>Category: <strong><?php the_category(); ?></strong></h2>
+		<h2>Categorie: <strong><?php the_category(); ?></strong></h2>
 	</div><!-- end .padding -->
 		
 	<div class="border-gray"></div>
-		
-	<?php while (have_posts()) : the_post(); ?>
-		<div class="padding">
-			<h4><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4><br />
-		</div><!-- end .padding -->
 
+	<?php 
+		while (have_posts()) : the_post(); 
+			get_template_part('part-post');
+		endwhile;
+	?>
 		
-		<?php endwhile; ?>
-			
 		<div class="navigation">
 			<div class="old-posts floatleft"><?php next_posts_link('See old posts') ?></div>
 			<div class="new-posts floatright"><?php previous_posts_link('See new posts') ?></div>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="page">
-	<div id="left">
+	<div id="left" class="page">
 	
 		<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
@@ -35,10 +35,6 @@
 	<?php endif; ?>
 	
 	</div><!-- end #left -->
-	
-	<div id="right">
-		<?php get_sidebar(); ?>
-	</div><!-- end #right -->
 	
 <div class="clearing"></div>
 </div><!-- end #page -->

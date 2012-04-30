@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="page">
-	<div id="left">
+	<div id="left" class="blog">
 		<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<div class="post" id="post-<?php the_ID(); ?>">
