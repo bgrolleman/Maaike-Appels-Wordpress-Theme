@@ -15,17 +15,17 @@ Released under the <a href="http://www.perlfoundation.org/artistic_license_2_0">
 
 body { font-family:Arial, sans-serif; font-size:12px; background-color: white; }
 
-a { color:#611E61; font-weight:bold; text-decoration:none; }
+a { color:#53335E; font-weight:bold; text-decoration:none; }
 a:hover { color:#444; font-weight:bold; text-decoration:underline; }
-a:visited { color:#611E61; font-weight:bold; }
+a:visited { color:#53335E; font-weight:bold; }
 a:active { color:#999; }
 /* a.target-blank, a[target="_blank"] { background:url(images/ico-icons.png) no-repeat right 5px; padding:0 25px 0 0; } */
 a.happy-face { position:absolute; top:10px; right:10px; display:block; width:18px; height:18px; background:url(images/ico-icons.png) no-repeat  0px -63px; }
 p, li { color:#444; font-size:12px; line-height:18px; }
 ul, ol { padding:0; margin:0; }
 ul li, ol li { list-style-position:inside; }
-.border-gray { width:100%; height:5px; background:url(images/bg_post_border.png) repeat-x bottom left; }
-.padding { padding:0 0 0 50px; margin:10px 0; }
+.border-gray { width:100%; height:5px; border-bottom:2px solid #F1F1F1; padding:0 0 0 0; margin:20px 0px 20px 0px; }
+.padding { padding:0 0 0 25px; margin:10px 0; }
 .alignleft { text-align:left; }
 .alignright { text-align:right; }
 .aligncenter { text-align:center; }
@@ -33,12 +33,20 @@ ul li, ol li { list-style-position:inside; }
 #container { width:980px; margin:50px auto; }
 
 /* ----- Header ----- */
-#header { width:980px; margin:0 0 20px 0; 
-    background-image : url('images/logo.png');
+#header #logoimg { 
+    background-image : url('images/background.png');
     background-repeat:no-repeat;
-    background-position:98% 0%;
+    height: 258px;
+    width: 258px;
+    top: -10px;
+    left: 675px;
+    position: absolute;
+    z-index: 25; 
+}
+#header { width:980px; margin:0 0 20px 0; 
     height: 170px;
     margin: 0px;
+    position: relative;
 }
 #header #logo { float:left; width:135px; margin:0 50px 0 0; }
 #header #logo h1 { font-size:45px; font-weight:normal; margin:0; letter-spacing:-2px; }
@@ -86,7 +94,7 @@ div.page { float:left; width:880px; }
 #left ul.post-categories li { list-style:none; display:inline; padding:0 10px 0 0; }
 #left .link-pages { margin:10px 0; color:#999; }
 #left .link-pages a { padding:5px; background:#EEE; color:#444; }
-#left .postmetadata { border-top:2px solid #F1F1F1; padding:20px 0 0 0; margin:20px 0 20px 0; }
+#left .postmetadata { border-top:0px solid #F1F1F1; padding:20px 0 0 0; margin:20px 0 20px 0; }
 #left .postmetadata .floatleft { width:360px; }
 #left .postmetadata p { margin:0 0 10px 0; font-size:11px; color:#777; line-height:18px; }
 #left .postmetadata span { display:inline; }
@@ -370,4 +378,23 @@ width:76px !important;
 	content: " ";
 	clear: both;
 	height: 0;
+}
+
+/* Twitter */
+.widget_twitter ul li {
+	border:1px solid #F1F1F1;
+	border-radius: 3px;
+	padding: 5px;
+}
+.widget_twitter span.entry-content {
+  display: block;
+}
+.widget_twitter span.entry-meta {
+	margin-top: 10px;
+	display: block;
+}
+
+table#wp-calendar tbody tr td, table#wp-calendar thead tr th, table#wp-calendar tfoot tr td {
+	border: 0px;
+	padding: 5px;
 }

@@ -33,6 +33,7 @@
 			</div><!-- end .post -->
 
 	<?php endif; ?>
+	<div class="border-gray"></div>
 	
 	</div><!-- end #left -->
 	

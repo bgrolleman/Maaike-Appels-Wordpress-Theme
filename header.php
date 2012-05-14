@@ -29,6 +29,7 @@
 <a href="<?php bloginfo('url'); ?>" title="Happy face :)" class="happy-face"></a>
 <div id="container">
 <div id="header">
+	<div id="logoimg"></div>
 	<div id="logo">
 		<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
 		<p><?php bloginfo('description'); ?></p>
