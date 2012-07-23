@@ -37,7 +37,7 @@
 	<div id="menu">
 		<ul>
 		  <!--  <li><a href="/">blog</a></li>  -->
-			<?php wp_list_pages('title_li='); ?>
+			<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
 			<div class="clearing"></div>
 		</ul>
 	</div><!-- end #menu -->
