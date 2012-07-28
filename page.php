@@ -2,21 +2,17 @@
 
 <div id="page">
 	<div id="left" class="page">
+		<?php get_template_part('part-menu'); ?>
 	
 		<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<div class="post" id="post-<?php the_ID(); ?>">
-				<div class="padding">
-					<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-				</div><!-- end .padding -->
-					<div class="border-gray"></div>
-				<div class="padding">
-					<h6><?php edit_post_link(__(" (Edit) "), ''); ?></h6>
+		  <div class="padding">
 
 					<?php the_content('Read more&#8230;'); ?>
 
+			 	  <h6><?php edit_post_link(__(" (Edit) "), ''); ?></h6>
 					<?php wp_link_pages('before=<p class="link-pages">Pages: &after=</p>'); ?>
-					
 					<?php comments_template(); ?>
 								
 			</div><!-- end .padding -->
@@ -33,8 +29,6 @@
 			</div><!-- end .post -->
 
 	<?php endif; ?>
-	<div class="border-gray"></div>
-	
 	</div><!-- end #left -->
 	
 <div class="clearing"></div>

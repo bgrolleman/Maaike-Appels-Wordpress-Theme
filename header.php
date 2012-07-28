@@ -26,21 +26,10 @@
 	</script>
 </head>
 <body>
-<a href="<?php bloginfo('url'); ?>" title="Happy face :)" class="happy-face"></a>
 <div id="container">
 <div id="header">
-	<div id="logoimg"></div>
-	<div id="logo">
-		<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-		<p><?php bloginfo('description'); ?></p>
-	</div><!-- end #logo -->
-	<div id="menu">
-		<ul>
-		  <!--  <li><a href="/">blog</a></li>  -->
-			<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
-			<div class="clearing"></div>
-		</ul>
-	</div><!-- end #menu -->
+	<div id="toplogo"></div>
+	<?php wp_nav_menu( array( 'theme_location' => 'topmenu', 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
 <div class="clearing"></div>
 </div><!-- end #header -->
 <script type="text/javascript">
