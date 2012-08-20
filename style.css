@@ -16,8 +16,6 @@ Maaike Paars - #55345F
 @import url("css/class.css");
 
 body { font-family:Arial, sans-serif; font-size:12px; background-color: white; }
-#toplogo { margin: 0px; width: 0px; width: 880px; height:177px; background:url(images/toplogo.png); }
-
 a { color:#55345F; font-weight:bold; text-decoration:none; }
 a:hover { color:#444; font-weight:bold; text-decoration:underline; }
 a:visited { color:#55345F; font-weight:bold; }
@@ -40,23 +38,10 @@ img.aligncenter { margin-left: auto; margin-right: auto; }
 #container { width:980px; margin:50px auto; padding: 0px 10px;}
 
 /* ----- Header ----- */
-#header #logoimg { 
-    background-image : url('images/background.png');
-    background-repeat:no-repeat;
-    height: 158px;
-    width: 158px;
-    top: -10px;
-    left: 675px;
-    position: absolute;
-    z-index: 25; 
-}
 #header { width:980px; margin:0 0 20px 0; 
     margin: 0px;
     position: relative;
 }
-#header #logo { float:left; width:135px; margin:0 50px 0 0; }
-#header #logo h1 { font-size:45px; font-weight:normal; margin:0; letter-spacing:-2px; }
-#header #logo p { color:#999; font-size:20px; margin:5px 0 0 0; }
 
 
 /* #header .menu-header { float:left; width:880px; margin:18px 50px 10px 0; border-bottom: 2px solid #F1F1F1;}

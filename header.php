@@ -27,7 +27,6 @@
 <body>
 <div id="container">
 <div id="header">
-	<div id="toplogo"></div>
 	<?php wp_nav_menu( array( 'theme_location' => 'topmenu', 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
-<div class="clearing"></div>
+	<div class="clearing"></div>
 </div><!-- end #header -->
