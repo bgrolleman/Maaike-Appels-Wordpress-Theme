@@ -93,6 +93,7 @@ div.page { float:left; width:880px; }
 #left h3 a { font-size:21px; color:#666; font-weight:normal; }
 #left h4 a { font-size:18px; color:#666; font-weight:normal; }
 #left h3, #left h4, #left h5, #left h6 { color:#666;  font-weight:normal; margin:10px 0 0 0; }
+#left h3 { font-size: 16px; margin: 10px 0px 5px 10px; }
 #left p { font-size:12px; line-height:18px; color:#555; margin-left: 10px; }
 #left p + p { margin-top: 20px; }
 #left p a.more-link { font-size:12px; font-weight:bold; color:#666; background:url(images/ico-icons.png) no-repeat left -22px; margin:0 0 0 15px; padding:0 0 0 20px; }
@@ -458,3 +459,17 @@ table, tr, td, th {
 #left h4.faq-header { color:#666; font-size:18px; font-weight:normal; margin:0px 0px 5px 0px; }
 #left p.faq-question { margin-top: 0px; margin-bottom: 0px; padding 0px; color: black; }
 #left p.faq-answer { margin-left: 25px; margin-top: 0px; margin-bottom: 5px; padding 0px; }
+
+#left table {
+	border: 1px solid #F1F1F1;
+	margin-left: 10px;
+}
+#left th, #left td {
+	padding: 4px;
+	min-width: 100px;
+	border: 1px solid #F1F1F1;
+}
+#left th {
+	background-color: #F1F1F1;
+}
+#left td {}

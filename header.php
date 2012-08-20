@@ -11,7 +11,6 @@
 	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/stepcarousel.js">
 	<script language="javascript" type="text/javascript">
 		function showHide(shID) {
 		   if (document.getElementById(shID)) {
@@ -32,17 +31,3 @@
 	<?php wp_nav_menu( array( 'theme_location' => 'topmenu', 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
 <div class="clearing"></div>
 </div><!-- end #header -->
-<script type="text/javascript">
-
-stepcarousel.setup({
-galleryid: 'quotegallery', //id of carousel DIV
-beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
-panelclass: 'customerquote', //class of panel DIVs each holding content
-panelbehavior: {speed:300, wraparound:true, persist:false},
-defaultbuttons: {enable: true, moveby: 1, leftnav: ['<?php bloginfo('template_directory');?>/images/larrow.png', -35, 50], rightnav: ['<?php bloginfo('template_directory');?>/images/rarrow.png', 5 , 50]},
-statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
-contenttype: ['inline'], // content type <--No comma following the very last parameter, always!
-autostep: {enable:true, moveby:1, pause:4000},
-})
-
-</script>
