@@ -25,34 +25,9 @@
 	</script>
 </head>
 <body>
-<a href="<?php bloginfo('url'); ?>" title="Happy face :)" class="happy-face"></a>
 <div id="container">
 <div id="header">
-	<div id="logoimg"></div>
-	<div id="logo">
-		<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-		<p><?php bloginfo('description'); ?></p>
-	</div><!-- end #logo -->
-	<div id="menu">
-		<ul>
-		  <!--  <li><a href="/">blog</a></li>  -->
-			<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
-			<div class="clearing"></div>
-		</ul>
-	</div><!-- end #menu -->
+	<div id="toplogo"></div>
+	<?php wp_nav_menu( array( 'theme_location' => 'topmenu', 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
 <div class="clearing"></div>
 </div><!-- end #header -->
-<script type="text/javascript">
-
-stepcarousel.setup({
-galleryid: 'quotegallery', //id of carousel DIV
-beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
-panelclass: 'customerquote', //class of panel DIVs each holding content
-panelbehavior: {speed:300, wraparound:true, persist:false},
-defaultbuttons: {enable: true, moveby: 1, leftnav: ['<?php bloginfo('template_directory');?>/images/larrow.png', -35, 50], rightnav: ['<?php bloginfo('template_directory');?>/images/rarrow.png', 5 , 50]},
-statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
-contenttype: ['inline'], // content type <--No comma following the very last parameter, always!
-autostep: {enable:true, moveby:1, pause:4000},
-})
-
-</script>

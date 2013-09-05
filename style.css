@@ -9,26 +9,33 @@ Tags: white, light, two-columns, right-sidebar, fixed-width
 .
 Released under the <a href="http://www.perlfoundation.org/artistic_license_2_0">Artistic License 2.0</a>
 .
+
+Maaike Paars - #55345F
 */
 
 @import url("css/class.css");
 
 body { font-family:Arial, sans-serif; font-size:12px; background-color: white; }
+#toplogo { margin: 0px; width: 0px; width: 880px; height:177px; background:url(images/toplogo.png); }
 
-a { color:#53335E; font-weight:bold; text-decoration:none; }
+a { color:#55345F; font-weight:bold; text-decoration:none; }
 a:hover { color:#444; font-weight:bold; text-decoration:underline; }
-a:visited { color:#53335E; font-weight:bold; }
+a:visited { color:#55345F; font-weight:bold; }
 a:active { color:#999; }
 /* a.target-blank, a[target="_blank"] { background:url(images/ico-icons.png) no-repeat right 5px; padding:0 25px 0 0; } */
 a.happy-face { position:absolute; top:10px; right:10px; display:block; width:18px; height:18px; background:url(images/ico-icons.png) no-repeat  0px -63px; }
 p, li { color:#444; font-size:12px; line-height:18px; }
 ul, ol { padding:0; margin:0; }
 ul li, ol li { list-style-position:inside; }
-.border-gray { width:100%; height:5px; border-bottom:2px solid #F1F1F1; padding:0 0 0 0; margin:10px 0px 40px 0px; }
+.border-gray { width:100%; height:5px; border-bottom:2px solid #F1F1F1; padding:0 0 0 0; margin:10px 0px 10px 0px; }
 .padding { padding:0 0 0 0; margin:10px 0; }
 .alignleft { text-align:left; }
 .alignright { text-align:right; }
 .aligncenter { text-align:center; }
+.clear { clear: both; padding-top: 25px; }
+img.alignright { float: right; }
+img.alignleft { float: left; }
+img.aligncenter { margin-left: auto; margin-right: auto; } 
 
 #container { width:980px; margin:50px auto; padding: 0px 10px;}
 
@@ -36,52 +43,62 @@ ul li, ol li { list-style-position:inside; }
 #header #logoimg { 
     background-image : url('images/background.png');
     background-repeat:no-repeat;
-    height: 258px;
-    width: 258px;
+    height: 158px;
+    width: 158px;
     top: -10px;
     left: 675px;
     position: absolute;
     z-index: 25; 
 }
 #header { width:980px; margin:0 0 20px 0; 
-    height: 170px;
     margin: 0px;
     position: relative;
 }
 #header #logo { float:left; width:135px; margin:0 50px 0 0; }
 #header #logo h1 { font-size:45px; font-weight:normal; margin:0; letter-spacing:-2px; }
 #header #logo p { color:#999; font-size:20px; margin:5px 0 0 0; }
-#header #menu { float:left; width:600px; margin:18px 50px 0 0; }
-#header #menu ul li { display:block; float:left; list-style:none; position:relative; }
-#header #menu ul li a { color:#777; margin:0 30px 0 0; font-size:20px; font-weight:normal; letter-spacing:-1px; }
-#header #menu ul li a:hover, #header #menu ul li.current_page_item a { color:#222; text-decoration:none; }
-#header #menu ul li ul { /* L1 */ display:none; background:#FFF; border:1px solid red; position:absolute; z-index:1000; top:20px; left:1px; }
-#header #menu ul li:hover ul { display:block; width:130px; border-top:1px solid #CCC; border-left:1px solid #CCC; border-right:2px solid #CCC; border-bottom:2px solid #CCC; }
-#header #menu ul li ul li { width:120px; padding:5px; margin:0; border-bottom:1px solid #CCC; background:#FFF; }
-#header #menu ul li ul li a { display:block; font-size:12px; font-weight:bold; letter-spacing:0; margin:0; }
-#header #menu ul li.current_page_item ul li a { color:#777; }
-#header #menu ul li.current_page_item ul li a:hover { color:#222; }
-#header #menu ul li:hover ul li ul { /* L2 */ display:none; position:absolute; top:0; left:130px; }
-#header #menu ul li:hover ul li:hover ul { display:block; width:130px; border-top:1px solid #CCC; border-left:1px solid #CCC; border-right:2px solid #CCC; border-bottom:2px solid #CCC; }
+
+
+/* #header .menu-header { float:left; width:880px; margin:18px 50px 10px 0; border-bottom: 2px solid #F1F1F1;}
+ */
+#header .menu-header { float:left; width:880px; margin:0px 50px 5px 0; border-bottom: 2px solid #F1F1F1; }
+#page .menu-header { float: left; width:100%; padding: 0px 0px 5px 0px; margin: 0px 0px 10px 0px ; }
+.menu-header ul li { display:block; float:left; list-style:none; width: 100px; position:relative; }
+.menu-header ul li a { color:#777; margin:0 30px 0 0; font-size:18px; font-weight:normal; }
+.menu-header ul li a:hover, .menu-header ul li.current_page_item a, .menu-header ul li.current_page_parent a { color:#55345F; text-decoration:none; }
+.menu-header ul li ul { /* L1 */ display:none; background:#FFF; border:1px solid red; position:absolute; z-index:1000; top:20px; left:1px; }
+.menu-header ul li:hover ul { display:block; width:130px; border-top:1px solid #CCC; border-left:1px solid #CCC; border-right:2px solid #CCC; border-bottom:2px solid #CCC; }
+.menu-header ul li ul li { width:120px; padding:5px; margin:0; border-bottom:1px solid #CCC; background:#FFF; }
+.menu-header ul li ul li a { display:block; font-size:12px; font-weight:bold; letter-spacing:0; margin:0; }
+.menu-header ul li.current_page_item ul li a { color:#777; }
+.menu-header ul li.current_page_item ul li a:hover { color:#222; }
+.menu-header ul li:hover ul li ul { /* L2 */ display:none; position:absolute; top:0; left:130px; }
+.menu-header ul li:hover ul li:hover ul { display:block; width:130px; border-top:1px solid #CCC; border-left:1px solid #CCC; border-right:2px solid #CCC; border-bottom:2px solid #CCC; }
+.menu-header ul li { padding-left: 0px; margin-left: 0px; }
 #header #search { float:right; width:120px; margin:15px 0 0 0; }
 #header #search form#searchform input.ipt-keywords { width:96px; height:18px; padding:5px 0 3px 25px; background:url(images/bg_search.png) no-repeat; font-size:11px; font-weight:normal; color:#888; border:0; }
 #header #search form#searchform input.btt-search { color:#555; font-size:11px; font-weight:bold; background:none; border:0; }
 
 #page { width:980px; }
+div.post { clear:both; padding-top: 25px; }
 
 /* ----- Left content ----- */
 div.blog { float:left; width:760px; } 
 div.page { float:left; width:880px; }
 #left .post { margin:0 0 60px 0; color:#444; }
 #left h1 { color:#666; font-size:33px; font-weight:normal; margin:0;  }
-#left h2, #left h2 a { color:#666; font-size:26px; font-weight:normal; margin:10px 0 0 0; }
+#left h2, #left h2 a { color:#666; font-size:18px; font-weight:normal; margin:10px 0 10px 0; }
 #left h2 strong a { font-weight:bold; }
+#left p + h2 { margin-top: 30px; }
 #left h3 a { font-size:21px; color:#666; font-weight:normal; }
-#left h4 a {  font-size:18px; color:#666; font-weight:normal; }
+#left h4 a { font-size:18px; color:#666; font-weight:normal; }
 #left h3, #left h4, #left h5, #left h6 { color:#666;  font-weight:normal; margin:10px 0 0 0; }
-#left p { font-size:12px; line-height:18px; color:#555; }
+#left h3 { font-size: 16px; margin: 10px 0px 5px 10px; }
+#left p { font-size:12px; line-height:18px; color:#555; margin-left: 10px; }
+#left p + p { margin-top: 20px; }
 #left p a.more-link { font-size:12px; font-weight:bold; color:#666; background:url(images/ico-icons.png) no-repeat left -22px; margin:0 0 0 15px; padding:0 0 0 20px; }
-#left ul li, #left ol li { padding:0 10px 0 10px ; margin : 0px };
+#left div.padding > ul > li, #left div.padding > ol > li { padding:0 10px 0 10px ; margin : 0px 0px 0px 10px; list-style-type: square; }
+#left .menu-header ul li { padding: 0px; margin: 0px; }
 #left blockquote { padding:20px; font-style:italic; line-height:18px; }
 /*-- #left img { max-width:600px; } --*/
 #left address, #left kbd { font-family:Times New Roman, serif; font-size:15px; line-height:24px; }
@@ -106,6 +123,7 @@ div.page { float:left; width:880px; }
 #left .postmetadata span.tags { background:url(images/ico-icons.png) no-repeat left -22px; padding:0 0 0 20px; }
 #left .navigation { padding:0 0 0 185px; margin:0 0 30px 0; }
 #left .navigation a { display:block; background:#F1F1F1; padding:5px; font-size:large; font-weight:normal; }
+#left { border-bottom: 2px solid #F1F1F1; padding-bottom: 25px; }
 
 /* ----- Right content ----- */
 #right { float:right; width:190px; padding:50px 0 0 0; background:#FFF; color:#555; font-size:12px; }
@@ -158,7 +176,7 @@ form#respond p.btt-submit-wrap input.btt-submit { width:150px; font-size:14px; b
 #trackbacks ul li a { color:#555; font-size:12px; font-weight:normal; }
 
 /* ----- Footer ----- */
-#footer { text-align:left; margin:70px 0 0 0; }
+#footer { text-align:left; margin:20px 0 0 0; }
 #footer p { font-size:11px; color:#888; font-weight:normal; line-height:18px; }
 #footer p a { color:#888; }
 
@@ -437,3 +455,21 @@ table, tr, td, th {
 	color:#ffffff;
 }
 /* This imageless css button was generated by CSSButtonGenerator.com */
+
+#left h4.faq-header { color:#666; font-size:18px; font-weight:normal; margin:0px 0px 5px 0px; }
+#left p.faq-question { margin-top: 0px; margin-bottom: 0px; padding 0px; color: black; }
+#left p.faq-answer { margin-left: 25px; margin-top: 0px; margin-bottom: 5px; padding 0px; }
+
+#left table {
+	border: 1px solid #F1F1F1;
+	margin-left: 10px;
+}
+#left th, #left td {
+	padding: 4px;
+	min-width: 100px;
+	border: 1px solid #F1F1F1;
+}
+#left th {
+	background-color: #F1F1F1;
+}
+#left td {}
